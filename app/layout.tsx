@@ -15,9 +15,9 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
-  title: "Sabic Elektro | Električarski radovi",
+  title: "Šabić elektroinstalacije | Električar Zenica",
   description:
-    "Moderni i sigurni električarski radovi za domove i poslovne prostore.",
+    "Pouzdan električar u Zenici i okolici za hitne intervencije, priključivanje štednjaka, sanaciju kablova i elektroinstalacije.",
 };
 
 export default function RootLayout({
