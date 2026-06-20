@@ -50,7 +50,7 @@ export default function Home() {
         </div>
 
         <nav className="site-nav" aria-label="Glavna navigacija">
-          <a href="#" className="brand">
+          <a href="#" className="brand desktop-brand">
             <span className="brand-mark">
               <Image
                 src="/brand/logo-bez-teksta.png"
@@ -63,6 +63,32 @@ export default function Home() {
             </span>
             <span>Šabić Elektro</span>
           </a>
+          <details className="mobile-brand-menu">
+            <summary className="brand mobile-brand-trigger">
+              <span className="brand-mark">
+                <Image
+                  src="/brand/logo-bez-teksta.png"
+                  alt=""
+                  width={1254}
+                  height={1254}
+                  priority
+                  unoptimized
+                />
+              </span>
+              <span>Šabić Elektro</span>
+              <span className="burger-icon" aria-hidden="true">
+                <span />
+                <span />
+                <span />
+              </span>
+            </summary>
+            <div className="mobile-nav-panel">
+              <a href="#usluge">Usluge</a>
+              <a href="#hitno">Hitno</a>
+              <a href="#proces">Proces</a>
+              <a href="#kontakt">Kontakt</a>
+            </div>
+          </details>
           <div className="nav-links">
             <a href="#usluge">Usluge</a>
             <a href="#hitno">Hitno</a>
