@@ -24,6 +24,7 @@ html {
 }
 
 body {
+  margin: 0;
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-body), Arial, Helvetica, sans-serif;
@@ -267,9 +268,9 @@ h3 {
 .hero-image::after {
   position: absolute;
   top: 50%;
-  left: 56%;
+  left: 55%;
   z-index: 1;
-  width: clamp(620px, 58vw, 920px);
+  width: clamp(680px, 58vw, 900px);
   aspect-ratio: 1;
   content: "";
   border-radius: 999px;
@@ -284,10 +285,10 @@ h3 {
 .hero-brand-wrap {
   position: absolute;
   top: 50%;
-  left: 56%;
+  left: 55%;
   z-index: 2;
   display: grid;
-  width: clamp(660px, 62vw, 980px);
+  width: clamp(500px, 45vw, 720px);
   aspect-ratio: 1;
   place-items: center;
   overflow: visible;
@@ -303,7 +304,7 @@ h3 {
   height: 100%;
   object-fit: contain;
   object-position: center;
-  transform: scale(1.08);
+  transform: scale(0.96);
 }
 
 .energy-ring {
@@ -599,20 +600,12 @@ h3 {
 
 .contact-card {
   display: grid;
+  justify-items: start;
   gap: 16px;
   padding: 28px;
   border: 1px solid rgba(220, 38, 38, 0.42);
   border-radius: 8px;
   background: #111116;
-}
-
-.contact-logo {
-  width: 100%;
-  max-width: 190px;
-  height: 74px;
-  object-fit: contain;
-  object-position: center;
-  filter: drop-shadow(0 0 22px rgba(220, 38, 38, 0.18));
 }
 
 .contact-card a:not(.btn) {
@@ -621,6 +614,57 @@ h3 {
 }
 
 .contact-card span {
+  color: var(--muted);
+}
+
+.site-footer {
+  position: relative;
+  overflow: hidden;
+  border-top: 1px solid rgba(220, 38, 38, 0.28);
+  background:
+    radial-gradient(circle at 50% 0%, rgba(220, 38, 38, 0.12), transparent 34%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.015)),
+    #09090d;
+}
+
+.footer-inner {
+  display: grid;
+  gap: 14px;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 28px clamp(20px, 4vw, 72px) 34px;
+  color: #d4d4d8;
+  font-size: 0.9rem;
+  line-height: 1.55;
+  text-align: center;
+}
+
+.footer-notice {
+  color: #f4f4f5;
+  font-weight: 700;
+}
+
+.footer-contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.footer-contact a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 38px;
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  border-radius: 8px;
+  padding: 0 14px;
+  background: rgba(255, 255, 255, 0.04);
+  color: #fff;
+  font-weight: 800;
+}
+
+.footer-signature {
   color: var(--muted);
 }
 
@@ -695,14 +739,14 @@ h3 {
 
   .hero-brand-wrap {
     top: 52%;
-    left: 56%;
-    width: clamp(480px, 52vw, 720px);
+    left: 55%;
+    width: clamp(420px, 42vw, 620px);
   }
 
   .hero-image::after {
     top: 52%;
-    left: 56%;
-    width: clamp(460px, 50vw, 680px);
+    left: 55%;
+    width: clamp(560px, 54vw, 780px);
   }
 }
 

@@ -109,7 +109,7 @@ export default function Home() {
             <a href="#kontakt" className="btn btn-primary">
               Pozovi električara
             </a>
-            <a href="tel:+38760000000" className="btn btn-secondary">
+            <a href="tel:+38762720865" className="btn btn-secondary">
               Hitna intervencija
             </a>
           </div>
@@ -206,21 +206,30 @@ export default function Home() {
           </p>
         </div>
         <div className="contact-card">
-          <Image
-            className="contact-logo"
-            src="/brand/sabic-logo"
-            alt="Šabić elektroinstalacijska rješenja"
-            width={1254}
-            height={1254}
-          />
-          <a href="tel:+38760000000">+387 60 000 000</a>
-          <a href="mailto:info@sabicelektro.ba">info@sabicelektro.ba</a>
+          <a href="tel:+38762720865">+387 62 720 865</a>
+          <a href="mailto:info@sabic.biz">info@sabic.biz</a>
           <span>Zenica i okolica | 24/7 hitne intervencije</span>
-          <a href="tel:+38760000000" className="btn btn-primary">
+          <a href="tel:+38762720865" className="btn btn-primary">
             Pozovi odmah
           </a>
         </div>
       </section>
+
+      <footer className="site-footer">
+        <div className="footer-inner">
+          <p className="footer-notice">
+            Firma je trenutno u fazi pripreme poslovanja. Usluge još nisu
+            dostupne.
+          </p>
+          <div className="footer-contact">
+            <a href="mailto:info@sabic.biz">info@sabic.biz</a>
+            <a href="tel:+38762720865">+387 62 720 865</a>
+          </div>
+          <p className="footer-signature">
+            2026 - Šabić - Elektroinstalacijska rješenja
+          </p>
+        </div>
+      </footer>
     </main>
   );
 }
